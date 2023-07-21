@@ -1,0 +1,10 @@
+.Tabs {
+  width: 100%;
+  height: auto;
+  min-height: 700px;
+  padding: 2rem 1rem;
+  color: black;
+  @media (max-width: 769px) {
+    padding: 2rem 0;
+  }
+}
