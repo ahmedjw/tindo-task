@@ -4,7 +4,7 @@ This project is a simple tab component that enables u to explore some products f
 the project is one page on port 3000 with a responsive layout.
 
 ## External Libraries used :
--Axios
+-Axios <br/>
 -react-query
 
 ## Api Endpoint used in the project:
