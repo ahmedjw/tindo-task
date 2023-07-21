@@ -34,6 +34,8 @@ const Tabs = () => {
     setTabContent(productsData)
   }, [productsData])
 
+  console.log(isCategoriesError)
+
   if (isCategoriesLoading) return <Spiner />
 
   if (isCategoriesError) return <div>An error has occurred</div>
