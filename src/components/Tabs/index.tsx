@@ -36,7 +36,7 @@ const Tabs = () => {
 
   if (isCategoriesLoading) return <Spiner />
 
-  if (isCategoriesError) return <div>An error has occurred: </div>
+  if (isCategoriesError) return <div>An error has occurred</div>
 
   return (
     <div className="container">
