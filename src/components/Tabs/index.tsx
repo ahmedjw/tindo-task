@@ -6,6 +6,7 @@ import TabContent from '../TabContent'
 import Spiner from '../spinner'
 import { Options } from '../../utils/consts'
 import { IProduct } from '../../interfaces'
+import ErrorHandler from '../ErrorHandler'
 import styles from './styles.module.css'
 
 const Tabs = () => {
@@ -34,11 +35,9 @@ const Tabs = () => {
     setTabContent(productsData)
   }, [productsData])
 
-  console.log(isCategoriesError)
-
   if (isCategoriesLoading) return <Spiner />
 
-  if (isCategoriesError) return <div>An error has occurred</div>
+  if (isCategoriesError) return <ErrorHandler />
 
   return (
     <div className="container">

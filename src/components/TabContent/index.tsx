@@ -1,4 +1,5 @@
 import Card from '../Card'
+import ErrorHandler from '../ErrorHandler'
 import Spiner from '../spinner'
 import { ITabContentProps } from './interfaces'
 
@@ -8,8 +9,7 @@ const TabContent = ({
   isProductError,
 }: ITabContentProps) => {
   if (isProductsLoading) return <Spiner />
-  if (isProductError) return <div>An error has occurred: </div>
-
+  if (isProductError) return <ErrorHandler />
   return (
     <div className="card-container">
       {content?.map((product) => (
