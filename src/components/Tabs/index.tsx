@@ -43,8 +43,9 @@ const Tabs = () => {
     <div className="container">
       <div className={styles.Tabs}>
         <ul className="nav">
-          {categories?.map((category) => (
+          {categories?.map((category, index) => (
             <Tab
+              key={index}
               activeTab={activeTab}
               setActiveTab={setActiveTab}
               title={category}

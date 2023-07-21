@@ -13,7 +13,7 @@ const TabContent = ({
   return (
     <div className="card-container">
       {content?.map((product) => (
-        <Card props={product} />
+        <Card props={product} key={product.id} />
       ))}
     </div>
   )

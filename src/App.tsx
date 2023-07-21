@@ -1,12 +1,8 @@
-import "./App.css";
-import Tabs from "./components/Tabs/index";
+import './App.css'
+import Tabs from './components/Tabs/index'
 
 function App() {
-  return (
-    <div className="App">
-      <Tabs />
-    </div>
-  );
+  return <Tabs />
 }
 
-export default App;
+export default App
